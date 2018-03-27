@@ -3,6 +3,7 @@ package com.mshemanskyi;
 public class Person {
     private String firstName;
     private String lastName;
+    private String pozition;
     private String sex;
     private int age;
 
@@ -21,6 +22,10 @@ public class Person {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    public String getpozition() { return pozition; }
+
+    public void setpozition(String pozition) { this.pozition = pozition; }
 
     public String getSex() {
         return sex;
@@ -42,6 +47,7 @@ public class Person {
         return "Person{" +
             "firstName='" + firstName + '\'' +
             ", lastName='" + lastName + '\'' +
+            ", pozition='" + pozition + '\'' +
             ", sex='" + sex + '\'' +
             ", age=" + age +
             '}';
